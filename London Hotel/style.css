@@ -1,0 +1,257 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* 首頁最上面 */
+#top {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+}
+#top #slogan{
+    color: purple;
+    font-size: smaller;
+    font-style: italic;
+}
+/* 主選單 */
+#menu{
+    max-width: 100%;
+    margin: auto;
+    background-color:rgb(120, 181, 231);
+}
+#menu ul{
+        /*格式設定*/
+        background-color: rgb(120, 181, 231);
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        line-height: 3em;
+        max-width: 800px;
+        margin: auto;
+    
+        /* 排版 flexbox */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+#menu ul>li {
+    /* 排版 */
+    flex: 1 1 auto;
+}
+#menu ul>li>a {
+    text-decoration: none;
+    background-color:lightblue;
+    color:steelblue;
+
+    border-bottom: solid thick cornflowerblue;
+    padding:20px 0;
+    transition: ease all .5s;
+
+    /* 排版 區塊 */
+    display: block;
+}
+#menu ul>li>a:hover {
+    border-bottom: solid thick black;
+    padding: 2px 0;
+}
+
+/* 首頁內文 */
+.bigcover {
+    position: relative;
+    height: 75vh;
+}
+.bigcover .bigbg {
+    /* 最大的那個圖 */
+    width: 100%;
+    height: 100%;
+    background-image: url(images/hotel_front.jpg);
+    background-size: cover;
+}
+.bigcover p{
+    /* 最大圖上的文字 */
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 3em;
+    width: 35%;
+    color: white;
+    text-shadow: 2px 3px black;
+}
+/* 文字與小圖(首頁、room、dining) */
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
+
+.conimg {
+    width: 32%;
+}
+.conimg img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+.conimg h3 {
+    color: steelblue;
+}
+/* 共同內文設定 */
+.content h2 {
+    color: slateblue;
+}
+.content {
+    max-width: 900px;
+    margin: auto;
+    text-align:justify; /*水平置中對齊-左右對齊*/
+}
+/* 超連結 */
+a{
+    text-decoration: none;
+    color: rgb(37, 121, 190);
+    font-weight: bolder;
+}
+/* 頁尾 */
+footer {
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    max-width: 600px;
+    margin: auto;
+    font-size: small;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+footer .icon {
+    padding-top: 30px;
+    text-align: center;
+    word-spacing: 2em;
+    margin: 1em ;
+}
+
+footer .icon>i {
+    margin-left: 2em;
+}
+
+/* dining */
+table {
+    margin-left:auto;
+    margin-right:auto;
+    width: 40%;
+}
+table caption {
+    font-weight: bolder;
+    color: slateblue;
+    font-size: 1.5em;
+}
+table th {
+    font-size: large;
+    text-align: center;
+    border-bottom: solid thick gray;
+}
+table tr {
+    height: 3em;
+}
+table tr td {
+    border-bottom: gray thin solid;
+}
+.roomservice {
+    margin-top: 2em;
+    text-align: center;
+    border-top: solid thick lightcoral;
+    border-bottom: solid thick lightcoral;
+}
+
+/* info */
+.info{
+    width: 32%;
+    text-align: left;
+}
+.info h3 {
+    color: steelblue;
+}
+.arinfo {
+    line-height: 1em;
+    padding-bottom: 15px;
+    border-bottom: solid thin gray;
+}
+.info ul{
+    padding-left: 20px;
+}
+#greenplan{
+    max-width: 640px;
+    margin: auto;
+    background-color: cadetblue;
+    border-radius: 20px;
+    padding: 20px 300px 20px 20px;
+    margin-bottom: 50px;
+    background-image: url(images/greenplanet.png);
+    background-size: 50%;
+    background-repeat:no-repeat;
+    background-position: 130% center;
+    color: white;
+}
+
+/* Attractions */
+.attractions {
+    padding: 10em 2em;
+    background-image: url(images/leicester_square.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height:100%;
+    width: 100%;
+    margin: 0 auto;
+}
+#block  {
+    background-color: white;
+    width: 40%;
+    height: 50%;
+    padding: 2%;
+    border-radius: 12px;
+    margin: auto;
+    opacity: 0.9; /*透明度*/
+}
+#block > h2 {
+    color: steelblue;
+}
+ /* events */
+ .events {
+    height:100vh ;
+    display: flex;
+    justify-content: space-between;
+ }
+.events .cover{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+.events .cover .back1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/events_business.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.events .cover .back2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/events_wedding.jpg);
+    background-size: cover;
+}
+.events .cover .econt{
+    position: absolute;
+    bottom: 0;
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}

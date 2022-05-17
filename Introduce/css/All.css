@@ -1,0 +1,387 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 9vh;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.Mark {
+    font-size: 4vh;
+    margin-left: 4vh;
+    color: black;
+    text-decoration: none; /*消除底線*/
+}
+
+.Href {
+    margin-right: 1vh;
+    display: block;
+    display: flex;
+    
+}
+
+
+.Href > .textRight {
+    font-size: 2.3vh;
+    color: black;
+    text-decoration: none;
+
+    margin-right: 2em;
+}
+
+.Href > .textRight:hover {
+    text-decoration: underline royalblue;
+    color: black;
+    transition: all 1s;
+    transform: scale(1.5);
+    margin-left: 1em;
+
+    
+}
+
+.Block1 {
+
+    margin-top: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Block1 > .B1text {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.Block1 > .B1Image img {
+    height: 80vh;
+}
+
+
+.Block2 {
+    margin-top: 20em;
+    margin-bottom: 30em;
+
+    height: 50vh;
+    background-color: blanchedalmond;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LeftImage {
+    height: 100%;
+}
+
+.LeftImage img {
+    width: 600px;
+    height: 100%;
+    margin-left: 3em;
+}
+
+.B2text {
+
+    font-size: 1.5em;
+
+}
+
+.RightImage {
+    height: 100%;
+}
+
+
+.RightImage > img {
+    width: 600px;
+    height: 100%;
+    margin-right: 3em;
+}
+
+.Block3 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Block3 > .B3text {
+    margin-bottom: 2em;
+    font-size: 2.5em;
+}
+
+.Block3 > .B3Image img {
+    height: 80vh;
+    margin-bottom: 3em;
+}
+
+.block3-1 {
+
+    height: 50vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Left3 {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Left3 > .me {
+    margin-bottom: 2em;
+
+    font-size: 2em;
+}
+
+.Left3 > .meimg {
+    height: 100%;
+
+    transition: all 1s;
+}
+
+.Left3 > .meimg:hover {
+    border: 1vh;
+    border-color: black;
+    border-style: inset;
+    transform: scale(1.2);
+}
+
+.Right3 > .metext {
+    font-size: 2em;
+}
+
+.Block4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Block4 > .B4button {
+    width: 4em;
+    height: 4em;
+
+    background-color: black;
+    transition: all .5s linear;
+    border-radius: 10px;
+}
+
+.Block4 > .B4button:hover {
+    background-color: lemonchiffon;
+    transform: rotate(180deg) scale(1.2);
+}
+
+.Block4 > .B4text {
+    margin-top: 1vh;
+    margin-bottom: 5em;
+    font-size: 2em;
+}
+
+.Block5 {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+.Block5 > .B5body {
+    display: flex;
+    align-items: center;
+}
+
+
+.B5body > .B5Image {
+    height: 100%;
+    
+}
+
+.B5body > .B5Image img {
+    height: 8vh;
+    border-radius: 15px;
+}
+
+.B5text {
+    font-size: 1.8em;
+    margin-left: 1.5em;
+}
+
+footer {
+    font-size: 1.5em;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:576px) {
+
+    header {
+        width: 100%;
+        height: 12vh;
+        background-color: wheat;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+    }
+
+    .Mark {
+        font-size: 1.5em;
+        margin-left: .8em;
+    }
+
+    .Href {
+        margin-left: 0;
+    }
+
+    .Href > .textRight {
+        font-size: 1.2em;
+        margin-left: .7em;
+        margin-right: .7em;
+    }
+
+    .Href > .textRight:hover {
+        /* border: .3em;
+        border-color: white;
+        border-style: inset; */
+        transform: scale(1.3);
+    }
+
+    .Block1 > .B1text {
+        font-size: 1.5em;
+    }
+
+
+    .Block1 > .B1Image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Block1 > .B1Image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Block2 {
+        margin-top: 15em;
+        margin-bottom: 15em;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .LeftImage {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .LeftImage img {
+        width: 80%;
+        height: 400px;
+        margin-left: 0;
+    }
+
+    .RightImage {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .RightImage img {
+        width: 80%;
+        height: 400px;
+        margin-right: 0;
+    }
+
+    .Block3 > .B3Image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Block3 > .B3Image img{
+        width: 90%;
+        height: 90%;
+
+    }
+
+    .Block3 > .B3text {
+        margin-bottom: 1em;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: initial;
+
+    }
+
+
+    .Left3 > .meimg {
+        width: 400px;
+
+    }
+    
+    .Left3 > .meimg:hover {
+        border: .3vh;
+        border-color: black;
+        border-style: inset;
+        transform: scale(1.1);
+    }
+
+    .Right3 > .metext {
+        font-size: 1.5em;
+        margin-top: 5em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Block5 > .B5body {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .B5body > .B5Image img {
+        height: 7vh;
+    }
+
+    .B5text {
+        font-size: 2em;
+        margin-left: 0;
+    }
+
+}

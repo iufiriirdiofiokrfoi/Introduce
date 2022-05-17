@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduce</title>
+    <link rel="stylesheet" href="css/All.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>   
+</head>
+<style>
+.Block4 > .B4button:hover {
+    background-color: #EAEAEA !important;
+}
+
+</style>
+
+<body>
+    <header style="background-color: #EAEAEA;">
+        <a href="Me.html" class="Mark">TLAD攜光併影</a>
+        <div class="Href">
+            <a href="People.html" class="textRight">以人億光</a>
+            <a href="Thing.html" class="textRight">以事繪影</a>
+            <a href="Hour.html" class="textRight">以時畫影</a>
+            <a href="Floor.html" class="textRight">以地著光</a>
+            <a href="Goods.html" class="textRight">以物布影</a>
+        </div>
+    </header>
+
+    <div class="Block1" >
+        <div class="B1text">在時間上觀落每刻</div>
+        <div class="B1Image"><img src="https://www.cup.com.hk/wp-content/uploads/2017/09/iStock-166080902.jpg" alt=""></div>
+        <div class="B1text">時鐘</div>
+    </div>
+
+    <div class="Block2" style="background-color: #EAEAEA;">
+        <div class="LeftImage"><img src="https://n.sinaimg.cn/front/164/w640h324/20190408/cZbN-hvhrcxm8745372.jpg" alt=""></div>
+        <div class="B2text">一寸光陰一寸金</div>
+        <div class="RightImage"><img src="https://img0.pconline.com.cn/pconline/1601/14/7447065_16343246_1449805183994_mthumb_thumb.jpg" alt=""></div>
+    </div>
+    <div class="Block2" style="background-color: #EAEAEA;">
+        <div class="LeftImage"><img src="img/Hour1.jpg" alt=""></div>
+        <div class="B2text">拋棄時間的人，時間也拋棄他。</div>
+        <div class="RightImage"><img src="img/Hour.jpg" alt=""></div>
+    </div>
+    <div class="Block3">
+        <div class="B3text">寸金難買寸光陰</div>
+        <div class="B3Image"><img src="https://img.lovepik.com/photo/50093/3918.jpg_wh860.jpg" alt=""></div>
+    </div>
+    <div class="Block4">
+        <button class="B4button"></button>
+        <div class="B4text">Top</div>
+    </div>
+    <div class="Block5">
+        <div class="B5body">
+            <div class="B5Image"><img src="img/facebook.png" alt=""></div>
+            <div class="B5text">柯伊庭</div>
+        </div>
+        <div class="B5body">
+            <div class="B5Image"><img src="img/instagram.png" alt=""></div>
+            <div class="B5text">kting112</div>
+        </div>
+        <div class="B5body">
+            <div class="B5Image"><img src="img/Wenzao_logo_1.png" alt=""></div>
+            <div class="B5text">1108211003</div>
+        </div>
+    </div>
+    <footer>©Copyright 2020 by Alice. All rights reserved.</footer>
+</body>
+<script>
+    $(function() {
+        var $win = $(window);
+        var $gotop = $('.B4button');
+            $gotop.click(function() {
+                $('html, body').animate({scrollTop: 0}, 'slow');
+        });
+    });
+</script>
+</html>

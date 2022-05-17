@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce</title>
+    <link rel="stylesheet" href="css/All.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+<style> 
+.Block4 > .B4button:hover {
+    background-color: #eaa2cf !important;
+}
+.Mehead {
+    background-color:  #eaa2cf;
+    z-index: 1;
+}
+</style>
+
+<body>
+    <header class="Mehead">
+        <a href="Me.html" class="Mark" >TLAD攜光併影</a>
+        <div class="Href">
+            <a href="People.html" class="textRight">以人億光</a>
+            <a href="Thing.html" class="textRight">以事繪影</a>
+            <a href="Hour.html" class="textRight">以時畫影</a>
+            <a href="Floor.html" class="textRight">以地著光</a>
+            <a href="Goods.html" class="textRight">以物布影</a>
+        </div>
+    </header>
+    <div class="Block1">
+        <div class="B1text">以物作為總結</div>
+        <div class="B1Image"><img src="https://wzuwebsiteintroexam.herokuapp.com/img/Ground/NOEND.jpg" alt=""></div>
+        <div class="B1text">高雄美濃</div>
+    </div>
+    <div class="Block2" style="background-color:  #eaa2cf;">
+        <div class="LeftImage"><img src="https://wzuwebsiteintroexam.herokuapp.com/img/Item/NO1-1.jpg" alt=""></div>
+        <div class="B2text">高雄美濃客家村油紙傘</div>
+        <div class="RightImage"><img src="https://wzuwebsiteintroexam.herokuapp.com/img/Item/NO1-2.jpg" alt=""></div>
+    </div>
+    <div class="Block2" style="background-color:  #eaa2cf;">
+        <div class="LeftImage"><img src="https://wzuwebsiteintroexam.herokuapp.com/img/Item/NO2-1.jpg" alt=""></div>
+        <div class="B2text">高雄旗津-風箏</div>
+        <div class="RightImage"><img src="https://wzuwebsiteintroexam.herokuapp.com/img/Item/NO2-2.jpg" alt=""></div>
+    </div>
+    <div class="Block2" style="background-color:  #eaa2cf;">
+        <div class="LeftImage"><img src="img/K11.jpg" alt=""></div>
+        <div class="B2text">駁二藝術特區</div>
+        <div class="RightImage"><img src="img/K12.jpg" alt=""></div>
+    </div>
+    <div class="Block3">
+        <div class="Left3">
+            <div class="me">作者簡介</div>
+            <img class="meimg" src="img/me.jpg" alt="" style="width: 300px;">
+        </div>
+        <div class="Right3">
+            <div class="metext">柯伊庭</div>
+        </div>
+    </div>
+
+  </div>
+    <div class="Block4" style="margin-top: 8em;">
+        <button class="B4button"></button>
+        <div class="B4text">Top</div>
+    </div>
+    <div class="Block5">
+        <div class="B5body">
+            <div class="B5Image"><img src="img/facebook.png" alt=""></div>
+            <div class="B5text">柯伊庭</div>
+        </div>
+        <div class="B5body">
+            <div class="B5Image"><img src="img/instagram.png" alt=""></div>
+            <div class="B5text">kting112</div>
+        </div>
+        <div class="B5body">
+            <div class="B5Image"><img src="img/Wenzao_logo_1.png" alt=""></div>
+            <div class="B5text">1108211003</div>
+        </div>
+    </div>
+    <footer>©Copyright 2020 by Alice. All rights reserved.</footer>
+</body>
+<script>
+    $(function() {
+        var $win = $(window);
+        var $gotop = $('.B4button');
+            $gotop.click(function() {
+                $('html, body').animate({scrollTop: 0}, 'slow')
+        });
+    });
+</script>
+</html>

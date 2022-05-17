@@ -1,0 +1,444 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 9vh;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Mark {
+    font-size: 4vh;
+    margin-left: 4vh;
+    color: black;
+    text-decoration: none; /*消除底線*/
+}
+
+.Href {
+    margin-right: 1vh;
+    display: block;
+    display: flex;
+    
+}
+
+
+.Href > .textRight {
+    font-size: 2.3vh;
+    color: black;
+    text-decoration: none;
+
+    margin-right: 2em;
+}
+
+.Href > .textRight:hover {
+    text-decoration: underline royalblue;
+    color: black;
+    transition: all 1s;
+    transform: scale(1.5);
+    margin-left: 1em;
+    
+}
+
+
+.block1 {
+    margin-top: 20vh;
+    height: 50vh;
+    background-color: cornflowerblue;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Left1 {
+    height: 100%;
+}
+
+.Left1 > img {
+    height: 100%;
+    transition: all 1s;    /* 動畫顯示時間 */
+}
+
+/* .Left1 img:hover 
+{
+     transform: scale(1.1); 
+     放大 
+     transform: rotate(360deg); 
+     旋轉 
+} */
+
+.Right1 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Right1 > .text1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.Right1 > .text2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    color: white;
+}
+
+.block2 {
+    margin-top: 30em;
+    margin-bottom: 30em;
+    height: 50vh;
+    background-color: rgb(116, 181, 247);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Left2 {
+
+    margin-left: 10em;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.Left2 > .text1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.Left2 > .text2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    color: white;
+}
+
+.Right2 {
+    height: 100%;
+}
+
+.Right2 > img {
+    height: 100%;
+    margin-left: 15em;
+}
+
+.block3 {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Left3 {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Left3 > .me {
+    margin-bottom: 2em;
+
+    font-size: 2em;
+}
+
+.Left3 > .meimg {
+    height: 100%;
+
+    transition: all 1s;
+}
+
+.Left3 > .meimg:hover {
+    border: 1vh;
+    border-color: black;
+    border-style: inset;
+    transform: scale(1.2);
+}
+
+.Right3 > .metext {
+    font-size: 2em;
+}
+
+.block4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block4 > .text1 {
+    margin-top: 10em;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+}
+
+.block4 > .Image {
+    margin-bottom: 2em;
+}
+
+.block4 > .Image img {
+    height: 50vh;
+}
+
+.B {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.B > .b {
+    width: 4em;
+    height: 4em;
+
+    background-color: black;
+    transition: all .5s linear ; /*動畫顯示時間*/
+    border-radius: 10px; /*變圓*/
+}
+
+.B > .b:hover {
+    background-color: deepskyblue;
+    transform: rotate(180deg) scale(1.2); /*旋轉*/
+
+
+}
+
+.B > .Btext {
+    margin-top: 1vh;
+    margin-bottom: 5em;
+    font-size: 2em;
+}
+
+.block5 {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.body > .B5Image img {
+    height: 8vh;
+}
+
+.text {
+    font-size: 1.8em;
+    margin-left: 1.5em;
+}
+
+footer {
+    font-size: 1.5em;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media (max-width:576px) {
+    
+    header {
+        width: 100%;
+        height: 10vh;
+        background-color: skyblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .Mark {
+        font-size: 1.5em;
+        margin-left: .8em;
+    }
+
+    .Href {
+        margin-left: 0;
+
+    }
+
+    .Href > .textRight {
+        font-size: 1.2em;
+        margin-left: .7em;
+        margin-right: .7em;
+
+    }
+
+    .Href > .textRight:hover {
+        /* border: .3em;
+        border-color: white;
+        border-style: inset; */
+        transform: scale(1.3);
+    }
+
+    .block1 {
+        margin-top: 15vh;
+        width: 560px;
+        height: auto;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }   
+
+    .Left1 {
+
+        height: 100%;
+        
+    }
+
+
+    .Left1 > img {
+        width: 480px;
+        height: 360px;
+        transition: none;
+        margin-top: 2vh;
+    }
+
+
+    .Right1 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .Right1 > .text1 {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Right1 > .text2 {
+        font-size: 1.3em;
+        margin-top: .5em;
+
+    }
+
+    .block2 {
+        margin-top: 20em;
+        margin-bottom: 20em;
+        width: 560px;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Left2 {
+        margin-left: 0em;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Left2 > .text1 {
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Left2 > .text2 {
+        font-size: 1em;
+        margin-top: .5em;
+    }
+    
+    .Right2 {
+        height: 100%;
+    }
+    
+    .Right2 > img {
+        width: 480px;
+        height: 390px;
+        margin-left: 0em;
+        margin-bottom: 1em;
+        margin-top: .5vh;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .block3 {
+        width: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Left3 > .meimg {
+        width: 400px;
+
+    }
+    
+    .Left3 > .meimg:hover {
+        border: .3vh;
+        border-color: black;
+        border-style: inset;
+        transform: scale(1.1);
+    }
+
+    .Right3 > .metext {
+        font-size: 1.5em;
+        margin-top: 5em;
+    }
+
+    .block4 > .text1 {
+        margin-top: 7em;
+    }
+
+    .block4 > .Image img {
+        height: 40vh;
+    }
+
+    .block5 > .body {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        font-size: 2em;
+        margin-left: 0;
+    }
+
+    .body > .B5Image img {
+        height: 7vh;
+    }
+}

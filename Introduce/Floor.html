@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce</title>
+    <link rel="stylesheet" href="css/All.css">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</head>
+
+<style>
+  .Block4 > .B4button:hover {
+      background-color: #f79290 !important;
+  }
+  
+  </style>
+<body>
+    <header style="background-color: #f79290;">
+        <a href="Me.html" class="Mark">TLAD攜光併影</a>
+        <div class="Href">
+            <a href="People.html" class="textRight">以人億光</a>
+            <a href="Thing.html" class="textRight">以事繪影</a>
+            <a href="Hour.html" class="textRight">以時畫影</a>
+            <a href="Floor.html" class="textRight">以地著光</a>
+            <a href="Goods.html" class="textRight">以物布影</a>
+        </div>
+    </header>
+    <div class="Block1">
+        <div class="B1text">以地為幕，以天為光呈現高雄之貌</div>
+        <div class="B1Image"><img src="img/Kaohsiung.jpg" alt=""></div>
+        <div class="B1text">高雄夜景</div>
+    </div>
+    <div class="Block2" style="background-color: #f79290;">
+        <div class="LeftImage"><img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2019/12/04/99/7148750.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050&exp=3600&exp=3600" alt=""></div>
+        <div class="B2text">文藻外語大學聖誕節擺設</div>
+        <div class="RightImage"><img src="https://wportfolio.wzu.edu.tw/blog/attach/316/42316/49/bf_64942_83489_32920_IMG_20141201_195637.jpg" alt=""></div>
+    </div>
+    <div class="Block2" style="background-color: #f79290;">
+        <div class="LeftImage"><img src="img/floor1.jpg" alt=""></div>
+        <div class="B2text">千禧公園的夜景</div>
+        <div class="RightImage"><img src="img/floor2.jpg" alt=""></div>
+    </div>
+    <div class="Block3">
+        <div class="B3text">以物作為總結</div>
+        <div class="B3Image"><img src="https://wzuwebsiteintroexam.herokuapp.com/img/Item/NO1-1.jpg" alt=""></div>
+    </div>
+    <div class="Block4">
+        <Button class="B4button"></Button>
+        <div class="B4text">Top</div>
+    </div>
+    <div class="Block5">
+      <div class="B5body">
+          <div class="B5Image"><img src="img/facebook.png" alt=""></div>
+          <div class="B5text">柯伊庭</div>
+      </div>
+      <div class="B5body">
+          <div class="B5Image"><img src="img/instagram.png" alt=""></div>
+          <div class="B5text">kting112</div>
+      </div>
+      <div class="B5body">
+          <div class="B5Image"><img src="img/Wenzao_logo_1.png" alt=""></div>
+          <div class="B5text">1108211003</div>
+      </div>
+  </div>
+  <footer>©Copyright 2020 by Alice. All rights reserved.</footer>
+</body>
+<script>
+    $(function() {
+        var $win = $(window);
+        var $gotop = $('.B4button');
+        $gotop.click(function() {
+            $('html, body').animate({scrollTop: 0}, 'slow');
+        });
+    });
+</script>
+</html>
